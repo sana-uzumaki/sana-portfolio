@@ -7,7 +7,7 @@ export default function Achievements() {
             <h2 className="text-xl font-extrabold mb-6 text-center">
                 Achievements
             </h2>
-            <div className='bg-blue-400/20 border border-blue-400  p-6 rounded-2xl shadow-sm shadow-blue-400 cursor-pointer transform hover:scale-105 transition duration-300'>
+            <div className='bg-blue-400/20 border border-blue-400  p-6 rounded-2xl shadow-sm shadow-blue-400 hover:shadow-lg cursor-pointer transform hover:scale-105 transition duration-300'>
                 <p className="text-lg leading-8 mt-6">
                     I have solved over 850 problems on LeetCode, covering various Data Structures and Algorithms such as Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Recursion, Binary Search, Greedy Algorithms, and Dynamic Programming. This continuous practice has helped me develop strong problem-solving skills and logical thinking ability.
                     <br /><br />
