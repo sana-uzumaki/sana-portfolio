@@ -6,7 +6,7 @@ export default function Achievements() {
             <h2 className="text-3xl font-extrabold mb-6 text-center">
                 Achievements
             </h2>
-            <div className='bg-blue-400/20 border border-blue-400'>
+            <div className='bg-blue-400/20 border border-blue-400  p-4'>
                 <p className="text-lg leading-8 text-slate-300 mt-6">
                     I have solved over 850 problems on LeetCode, covering various Data Structures and Algorithms such as Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Recursion, Binary Search, Greedy Algorithms, and Dynamic Programming. This continuous practice has helped me develop strong problem-solving skills and logical thinking ability.
                     <br /><br />
