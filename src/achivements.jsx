@@ -4,7 +4,7 @@ export default function Achievements() {
     return (
         <section
             id="achievements"
-            className="bg-slate-800 m-5 mt-10 p-10 rounded-2xl border border-slate-700/50 shadow-lg scroll-mt-16"
+            className="bg-slate-800 m-5 mt-10 p-10 rounded-2xl border border-slate-700 shadow-lg scroll-mt-16 text-white"
         >
             <h2 className="text-3xl font-extrabold mb-6 text-center">
                 Achievements
@@ -22,7 +22,7 @@ export default function Achievements() {
                 I am continuously learning Data Structures and Algorithms, Web Development, and modern technologies to improve my skills and become a better software developer. My goal is to become a full stack developer and build efficient, scalable, and user-friendly applications.
             </p>
 
-            <div className="mt-8 text-lg text-slate-300">
+            <div className="mt-8 text-lg">
                 <p className="font-semibold mb-2">Key Highlights:</p>
                 <ul className="list-disc pl-6 leading-8">
                     <li>Solved 850+ problems on LeetCode</li>
