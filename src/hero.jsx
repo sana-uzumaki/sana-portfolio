@@ -1,5 +1,4 @@
 import './App.css'
-import myimage from './assets/react.svg'
 
 
 export default function Hero() {
@@ -14,7 +13,7 @@ export default function Hero() {
                     <p className='text-lg'>I am  2nd-year CSE student at Muthayammal Engineering College. I build responsive web applications using React and Twilwind CSS and practice Data Structures and Algorithms to improve my problem Solving skills. I am currently looking for opportunities to learn, buid real-world projects, and grow as a developer.</p>
                 </section>
                 <section className='flex md:flex-1 justify-center items-center'>
-                    <img src={myimage}  className='rounded h-100 w-100'/>
+                    <img src=""  className='rounded h-100 w-100'/>
                 </section>
             </div>
         </>
