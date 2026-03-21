@@ -2,11 +2,12 @@ import './App.css'
 
 export default function Achievements() {
     return (
-        <section id="achievements" className="bg-slate-800 m-5 mt-10 p-10 rounded-2xl border border-slate-700 shadow-lg scroll-mt-16 text-white">
+        <>
+            <section id="achievements" className="bg-slate-800 m-5 mt-10 p-10 rounded-2xl border border-slate-700 shadow-lg scroll-mt-16 text-white">
             <h2 className="text-3xl font-extrabold mb-6 text-center">
                 Achievements
             </h2>
-            <div className='bg-blue-400/20 border border-blue-400  p-6 rounded-2xl shadow shadow-sm shadow-blue-400'>
+            <div className='bg-blue-400/20 border border-blue-400  p-6 rounded-2xl shadow-sm shadow-blue-400'>
                 <p className="text-lg leading-8 mt-6">
                     I have solved over 850 problems on LeetCode, covering various Data Structures and Algorithms such as Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Recursion, Binary Search, Greedy Algorithms, and Dynamic Programming. This continuous practice has helped me develop strong problem-solving skills and logical thinking ability.
                     <br /><br />
@@ -33,5 +34,6 @@ export default function Achievements() {
                 </div>
             </div>
         </section>
+        </>
     )
 }
