@@ -7,7 +7,7 @@ export default function Achievements() {
                 Achievements
             </h2>
             <div className='bg-blue-400/20 border border-blue-400  p-6 rounded-2xl'>
-                <p className="text-lg leading-8 text-slate-300 mt-6">
+                <p className="text-lg leading-8 mt-6">
                     I have solved over 850 problems on LeetCode, covering various Data Structures and Algorithms such as Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Recursion, Binary Search, Greedy Algorithms, and Dynamic Programming. This continuous practice has helped me develop strong problem-solving skills and logical thinking ability.
                     <br /><br />
                     I have maintained a consistent coding practice for more than 200 days, regularly solving daily coding challenges and improving my analytical thinking and coding efficiency. This consistency has helped me become more disciplined and focused on improving my technical skills.
