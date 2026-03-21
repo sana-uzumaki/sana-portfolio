@@ -4,7 +4,7 @@ export default function Achievements() {
     return (
         <>
             <section id="achievements" className="bg-slate-800 m-5 mt-10 p-10 rounded-2xl border border-slate-700 shadow-lg scroll-mt-16 text-white">
-            <h2 className="text-3xl font-extrabold mb-6 text-center">
+            <h2 className="text-xl font-extrabold mb-6 text-center">
                 Achievements
             </h2>
             <div className='bg-blue-400/20 border border-blue-400  p-6 rounded-2xl shadow-sm shadow-blue-400 cursor-pointer transform hover:scale-105 transition duration-300'>
