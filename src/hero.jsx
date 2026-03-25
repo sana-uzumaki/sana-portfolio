@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <>
             <div className='scroll-mt-16 mt-5 flex flex-col md:flex-row'>
-                <section className='m-5 p-6 pl-10 flex-1 border-slate-400/10 border rounded-2xl shadow shadow-sm shadow-white cursor-pointer'>
+                <section className='m-5 p-6 pl-10 flex-1'>
                     <h1 className='text-4xl mb-4'>Hello, I'm
                         <br />
                         sanantheswharan</h1>
