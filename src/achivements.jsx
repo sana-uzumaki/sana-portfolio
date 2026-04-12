@@ -9,7 +9,7 @@ export default function Achievements() {
     const staggerClasses = ['animate-stagger-1', 'animate-stagger-2', 'animate-stagger-3', 'animate-stagger-4']
 
     return (
-        <section id="achievements" className="scroll-mt-24 relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12">
+        <section id="achievements" className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12">
             <div className="mb-8 space-y-3 animate-fade-in-up">
                 <p className="text-sm uppercase tracking-[0.35em] text-cyan-200">Milestones</p>
                 <h2 className="text-3xl font-semibold text-white">Achievements & Experience</h2>

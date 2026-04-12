@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <section id="contacts" className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12 scroll-mt-4">
+        <section id="contacts" className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur-xl animate-fade-in-up sm:p-8">
                 <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
                     <div className="animate-fade-in-left">
