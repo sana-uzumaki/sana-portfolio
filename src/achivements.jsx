@@ -1,5 +1,3 @@
-import './App.css'
-
 export default function Achievements() {
     const highlights = [
         { label: 'LeetCode Problems', value: '850+' },
@@ -8,17 +6,19 @@ export default function Achievements() {
         { label: 'Paper Presentaion', value: '3rd Place' }
     ]
 
+    const staggerClasses = ['animate-stagger-1', 'animate-stagger-2', 'animate-stagger-3', 'animate-stagger-4']
+
     return (
-        <section id="achievements" className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12 scroll-mt-18">
+        <section id="achievements" className="scroll-mt-24 relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12">
             <div className="mb-8 space-y-3 animate-fade-in-up">
                 <p className="text-sm uppercase tracking-[0.35em] text-cyan-200">Milestones</p>
                 <h2 className="text-3xl font-semibold text-white">Achievements & Experience</h2>
             </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl animate-fade-in-up">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur-xl animate-fade-in-up sm:p-8">
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-8">
                     {highlights.map((item, index) => (
-                        <div key={item.label} className={`rounded-2xl border border-white/10 bg-slate-900/70 p-6 animate-fade-in-up animate-stagger-${(index % 4) + 1}`}>
+                        <div key={item.label} className={`rounded-2xl border border-white/10 bg-slate-900/70 p-6 animate-fade-in-up ${staggerClasses[index % staggerClasses.length]}`}>
                             <p className="text-4xl font-bold text-cyan-200">{item.value}</p>
                             <p className="mt-2 text-sm uppercase tracking-[0.2em] text-slate-400">{item.label}</p>
                         </div>
