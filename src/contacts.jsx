@@ -2,26 +2,47 @@ import './App.css'
 
 export default function Contact() {
     return (
-        <>
-            <div  className="flex md:flex-row flex-col mb-5">
-                <section id="contacts" className='flex-1 p-6 m-2 ml-5 border border-slate-600  bg-slate-800 rounded-2xl m-4 shadow-white hover:shadow-xl/10'>
-                    <h2 className="font-extrabold text-xl text-center m-5 mb-6">Contact</h2>
-                    <p className="bg-slate-400/20 border border-slate-400 rounded p-2 m-2">Email : <a href="sana0630c@gmail.com">sana0630c@gmail.com</a></p>
-                    <p className="bg-blue-400/20 border border-blue-400 rounded p-2 m-2">GitHub: <a href="https://github.com/sana-uzumaki">sana-uzumaki</a> </p>
-                    <p className="bg-yellow-400/20 border border-yellow-400 rounded p-2 m-2">LinkedIn: <a href="https://linkedin.com/in/sanantheshwaran-e">sanantheshwaran E</a> </p>
-                </section>
-                <section className='flex-1 p-6 m-2 mr-5 border border-slate-600 bg-slate-800 rounded-2xl m-4 shadow-white hover:shadow-xl/10'>
-                    <p className='text-lg'>I'm curretly looking for internship opportunities and real-world projecs where can imporve my skills and contribute to meaningful work.
-                        <br />
-                        <br />
-                    I enjoy building web applications using Reacy and Tailwind CSS, and i regularly practice problem-solving on Leetcode to strengthen my logical thinking
-                    <br />
-                    <br />
-                    if you have an opportunity, project, or just want to connect, feel free to reach out. 
-                    <br />Thank you for visiting my portfolio.
-                    </p>
-                </section>
+        <section id="contacts" className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl">
+                <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+                    <div>
+                        <p className="text-sm uppercase tracking-[0.35em] text-cyan-200">Let's connect</p>
+                        <h2 className="mt-4 text-3xl font-semibold text-white">Ready to build something great?</h2>
+                        <p className="mt-3 max-w-2xl text-slate-300">
+                            I'm currently looking for internship opportunities and real-world projects where I can improve my skills and contribute to meaningful work.
+                        </p>
+                        <p className="mt-4 text-slate-400">
+                            If you have an opportunity, project idea, or just want to connect, feel free to reach out. I'd love to hear from you!
+                        </p>
+                    </div>
+                    <div className="grid gap-3 sm:grid-cols-2">
+                        <a href="mailto:sana0630c@gmail.com" className="inline-flex items-center justify-center rounded-3xl bg-cyan-400 px-6 py-3 text-center text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">
+                            Email me
+                        </a>
+                        <a href="#projects" className="inline-flex items-center justify-center rounded-3xl border border-white/10 bg-slate-900/70 px-6 py-3 text-center text-sm font-semibold text-slate-100 transition hover:border-cyan-300/40">
+                            My projects
+                        </a>
+                    </div>
+                </div>
+
+                <div className="mt-8 border-t border-white/10 pt-8">
+                    <p className="mb-6 text-sm uppercase tracking-[0.35em] text-cyan-200">Connect with me on</p>
+                    <div className="flex flex-col gap-3 sm:flex-row">
+                        <a href="https://github.com/sana-uzumaki" className="inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-slate-300 transition hover:border-white/20 hover:bg-white/10">
+                            <span>🔗 GitHub</span>
+                            <span className="text-slate-500">sana-uzumaki</span>
+                        </a>
+                        <a href="https://linkedin.com/in/sanantheshwaran-e" className="inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-slate-300 transition hover:border-white/20 hover:bg-white/10">
+                            <span>💼 LinkedIn</span>
+                            <span className="text-slate-500">sanantheshwaran E</span>
+                        </a>
+                        <a href="mailto:sana0630c@gmail.com" className="inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-slate-300 transition hover:border-white/20 hover:bg-white/10">
+                            <span>✉️ Email</span>
+                            <span className="text-slate-500">sana0630c@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </>
+        </section>
     )
 }

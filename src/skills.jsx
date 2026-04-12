@@ -1,49 +1,46 @@
 import './App.css'
 
 export default function Skills() {
+    const skillCategories = [
+        {
+            title: 'Languages',
+            items: ['Java', 'Python', 'C++', 'PHP']
+        },
+        {
+            title: 'Frontend',
+            items: ['React.js', 'Tailwind CSS', 'JavaScript']
+        },
+        {
+            title: 'Tools & Version Control',
+            items: ['Git', 'GitHub', 'VS Code']
+        },
+        {
+            title: 'Currently Learning',
+            items: ['Backend Development', 'APIs', 'Databases']
+        }
+    ]
+
     return (
-        <>
-            <section id="skills" className="bg-slate-800 m-5 p-6 rounded-2xl shadow-white hover:shadow-xl/10 scroll-mt-16 border border-slate-700/50">
-                <h2 className="text-xl font-extrabold m-5 text-center">Skills</h2>
-                <div className="flex flex-col md:flex-row gap-6">
-                    <div className="bg-red-400/20 backdrop-blur-sm border border-red-400 rounded-2xl p-4 flex-1 transform hover:scale-105 transition-all duration-300 cursor-pointer shadow shadow-red-400 hover:shadow-lg">
-                        <h3 className="flex font-semibold text-lg items-center">
-                            <div className='bg-red-400 h-4 w-4 mr-2 rounded-full'></div>Languages</h3>
-                        <ul>
-                            <li className="text-center text-lg bg-red-400/10 border border-red-400 rounded my-2">Java</li>
-                            <li className="text-center text-lg bg-red-400/10 border border-red-400 rounded my-2">Python</li>
-                            <li className="text-center text-lg bg-red-400/10 border border-red-400 rounded my-2">c++</li>
-                            <li className="text-center text-lg bg-red-400/10 border border-red-400 rounded my-2">Php</li>
-                        </ul>
+        <section id="skills" className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12">
+            <div className="mb-8 space-y-3">
+                <p className="text-sm uppercase tracking-[0.35em] text-cyan-200">Expertise</p>
+                <h2 className="text-3xl font-semibold text-white">Skills & Technologies</h2>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                {skillCategories.map((category) => (
+                    <div key={category.title} className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/70">
+                        <p className="text-sm uppercase tracking-[0.35em] text-cyan-200 mb-4">{category.title}</p>
+                        <div className="space-y-2">
+                            {category.items.map((item) => (
+                                <div key={item} className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-center text-sm font-medium text-slate-200">
+                                    {item}
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                    <div className="bg-green-400/20 backdrop-sm border border-green-400 rounded-2xl p-4 flex-1 transform hover:scale-105 transition-all duration-400 cursor-pointer shadow shadow-green-400 hover:shadow-lg">
-                        <h3 className="font-semibold text-lg flex items-center">
-                            <div className='bg-green-400 h-4 w-4 mr-2 rounded-full'></div>Frontend</h3>
-                        <ul>
-                            <li className="text-center text-lg bg-green-400/10 border border-green-400 rounded my-2">React js</li>
-                            <li className="text-center text-lg bg-green-400/10 border border-green-400 rounded my-2">Tailwind css</li>
-                        </ul>
-                    </div>
-                    <div className="bg-blue-400/20 backdrop-sm border border-blue-400 rounded-2xl p-4 flex-1 ransform hover:scale-105 transition-all duration-400 cursor-pointer shadow shadow-blue-400 hover:shadow-lg">
-                        <h3 className="font-semibold text-lg flex items-center">
-                            <div className='bg-blue-400 h-4 w-4 mr-2 rounded-full'></div>tools</h3>
-                        <ul>
-                            <li className="text-center text-lg bg-blue-400/10 border border-blue-400 rounded my-2">Git</li>
-                            <li className="text-center text-lg bg-blue-400/10 border border-blue-400 rounded my-2">Git hub</li>
-                            <li className="text-center text-lg bg-blue-400/10 border border-blue-400 rounded my-2">Vs code</li>
-                        </ul>
-                    </div>
-                    <div className="bg-yellow-400/20 backdrop-sm border border-yellow-400 rounded-2xl p-4 flex-1 transform hover:scale-105 transition-all duration-400 cursor-pointer shadow shadow-yellow-400 hover:shadow-lg">
-                        <h3 className="font-semibold text-lg flex items-center">
-                            <div className='bg-yellow-400 h-4 w-4 mr-2 rounded-full'></div>Currently Learning</h3>
-                        <ul>
-                            <li className="text-center text-lg bg-yellow-400/10 border border-yellow-400 rounded my-2">Backend Development</li>
-                            <li className="text-center text-lg bg-yellow-400/10 border border-yellow-400 rounded my-2">APIs</li>
-                            <li className="text-center text-lg bg-yellow-400/10 border border-yellow-400 rounded my-2">DataBase</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </>
+                ))}
+            </div>
+        </section>
     )
 }
