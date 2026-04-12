@@ -2,7 +2,7 @@ import './App.css'
 
 export default function Hero() {
     return (
-        <section className="relative mx-auto max-w-6xl px-6 py-10 sm:px-8 lg:px-12">
+        <section id="hero" className="scroll-mt-20 relative mx-auto max-w-6xl px-6 py-10 sm:px-8 lg:px-12">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl">
                 <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
                     <div className="space-y-4">

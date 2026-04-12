@@ -26,7 +26,7 @@ export default function Projects() {
     ]
 
 	    return (
-        <section id="projects" className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12 scroll-mt-18">
+        <section id="projects" className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12 scroll-mt-15">
             <div className="mb-8 space-y-3 animate-fade-in-up">
                 <p className="text-sm uppercase tracking-[0.35em] text-cyan-200">Portfolio</p>
                 <h2 className="text-3xl font-semibold text-white">Featured Projects</h2>

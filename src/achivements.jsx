@@ -5,7 +5,7 @@ export default function Achievements() {
         { label: 'LeetCode Problems', value: '850+' },
         { label: 'Coding Streak Days', value: '200+' },
         { label: 'Projects Built', value: '5+' },
-        { label: 'Competition Placement', value: '3rd Place' }
+        { label: 'Paper Presentaion', value: '3rd Place' }
     ]
 
     return (
