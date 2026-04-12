@@ -10,14 +10,12 @@ import Hero from './hero.jsx'
 
 function App() {
   return (
-    <main className="relative min-h-screen bg-slate-950 text-slate-100 scroll-smooth">
+    <main className="relative min-h-screen bg-slate-950 pt-16 text-slate-100 scroll-smooth scroll-pt-16">
       {/* Radial gradient background effects */}
       <div className="pointer-events-none fixed inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_top_right,_rgba(56,189,248,0.12),_transparent_25%),radial-gradient(circle_at_top_left,_rgba(168,85,247,0.12),_transparent_20%)]" />
       <div className="pointer-events-none fixed inset-x-0 bottom-0 h-72 bg-[radial-gradient(circle_at_bottom_left,_rgba(248,113,113,0.10),_transparent_24%),radial-gradient(circle_at_bottom_right,_rgba(96,165,250,0.10),_transparent_20%)]" />
 
-      <div className="animate-fade-in-down">
-        <NavBar />
-      </div>
+      <NavBar />
       <div className="animate-fade-in-up">
         <Hero />
       </div>
