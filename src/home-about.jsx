@@ -2,9 +2,9 @@ import './App.css'
 
 export default function Home() {
     return (
-        <section className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12">
+        <section className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12 scroll-mt-18">
             <div className="grid gap-6 lg:grid-cols-2">
-                <div id="home" className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl transition hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/70">
+                <div id="home" className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl transition hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-left">
                     <div className="space-y-4">
                         <p className="text-sm uppercase tracking-[0.35em] text-cyan-200">Introduction</p>
                         <h2 className="text-2xl font-semibold text-white">Hi, I'm Sanan 👋</h2>
@@ -17,7 +17,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div id="about" className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl transition hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/70">
+                <div id="about" className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/40 backdrop-blur-xl transition hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-right">
                     <div className="space-y-4">
                         <p className="text-sm uppercase tracking-[0.35em] text-cyan-200">About Me</p>
                         <h2 className="text-2xl font-semibold text-white">Self-Taught Developer</h2>

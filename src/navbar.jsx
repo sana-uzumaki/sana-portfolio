@@ -2,7 +2,7 @@ import './App.css'
 
 export default function NavBar() {
     return (
-        <header className="sticky z-50 top-0 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
+        <header className="sticky z-100 top-0 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
             <div className="relative mx-auto max-w-6xl px-6 py-4 sm:px-8 lg:px-12 flex items-center justify-between">
                 <h2 className="text-lg font-semibold tracking-tight text-white uppercase">Sanantheshwaran</h2>
                 <nav>

@@ -15,14 +15,30 @@ function App() {
       <div className="pointer-events-none fixed inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_top_right,_rgba(56,189,248,0.12),_transparent_25%),radial-gradient(circle_at_top_left,_rgba(168,85,247,0.12),_transparent_20%)]" />
       <div className="pointer-events-none fixed inset-x-0 bottom-0 h-72 bg-[radial-gradient(circle_at_bottom_left,_rgba(248,113,113,0.10),_transparent_24%),radial-gradient(circle_at_bottom_right,_rgba(96,165,250,0.10),_transparent_20%)]" />
 
-      <NavBar />
-      <Hero />
-      <Home />
-      <Skills />
-      <Projects />
-      <Achivement />
-      <Contact />
-      <Footer />
+      <div className="animate-fade-in-down">
+        <NavBar />
+      </div>
+      <div className="animate-fade-in-up">
+        <Hero />
+      </div>
+      <div className="animate-slide-in-up animate-stagger-1">
+        <Home />
+      </div>
+      <div className="animate-slide-in-up animate-stagger-2">
+        <Skills />
+      </div>
+      <div className="animate-slide-in-up animate-stagger-3">
+        <Projects />
+      </div>
+      <div className="animate-slide-in-up animate-stagger-4">
+        <Achivement />
+      </div>
+      <div className="animate-fade-in-up">
+        <Contact />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </main>
   )
 }
