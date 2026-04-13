@@ -11,7 +11,7 @@ function safeJsonParse(value) {
 }
 
 function getCacheKey(username) {
-  return `leetcode-stats:v1:${username}`
+  return `leetcode-stats:v2:${username}`
 }
 
 function coerceNumber(value) {
@@ -60,6 +60,7 @@ export async function fetchLeetCodeStats(username, { endpoint = DEFAULT_ENDPOINT
   const normalized = {
     username,
     totalSolved: coerceNumber(data?.totalSolved),
+    totalActiveDays: coerceNumber(data?.totalActiveDays ?? data?.totalActive),
     streak: coerceNumber(data?.streak ?? data?.streakCounter ?? data?.streakCount),
     fetchedAt: data?.fetchedAt ?? new Date().toISOString(),
   }

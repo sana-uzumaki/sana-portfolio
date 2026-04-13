@@ -4,10 +4,9 @@ import { formatNumber } from './lib/leetcode-client.js'
 export default function Hero() {
     const defaultUsername = 'sana_0630'
     const username = import.meta.env.VITE_LEETCODE_USERNAME ?? defaultUsername
-    const profileUrl = `https://leetcode.com/${username}`
     const { data } = useLeetCodeStats(username)
     const solved = typeof data?.totalSolved === 'number' ? formatNumber(data.totalSolved) : null
-    const streak = typeof data?.streak === 'number' ? formatNumber(data.streak) : null
+    const activeDays = typeof data?.totalActiveDays === 'number' ? formatNumber(data.totalActiveDays) : null
 
     return (
         <section id="hero" className="scroll-mt-10 relative mx-auto max-w-6xl px-6 py-10 sm:px-8 lg:px-12">
@@ -29,10 +28,10 @@ export default function Hero() {
                     </div>
                     <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-xl shadow-slate-950/30 backdrop-blur-xl">
                         <p className="text-sm uppercase tracking-[0.35em] text-slate-400">Quick facts</p>
-                        <p className="mt-3 text-3xl font-semibold text-white">{solved ?? '850+'}</p>
+                        <p className="mt-3 text-3xl font-semibold text-white">{solved ?? '900+'}</p>
                         <p className="mt-1 text-sm text-slate-300">LeetCode problems solved</p>
-                        <p className="mt-4 text-3xl font-semibold text-cyan-200">{streak ?? '200+'}</p>
-                        <p className="text-sm text-slate-300">Days coding streak</p>
+                        <p className="mt-4 text-3xl font-semibold text-cyan-200">{activeDays ?? '200+'}</p>
+                        <p className="text-sm text-slate-300">Active days (This Year)</p>
                     </div>
                 </div>
             </div>
