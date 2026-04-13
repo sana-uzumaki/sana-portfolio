@@ -6,7 +6,7 @@ export default function Home() {
                     <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-left sm:p-8">
                         <div className="space-y-4">
                             <p className="text-sm uppercase tracking-[0.35em] text-cyan-200">Introduction</p>
-                            <h2 className="text-2xl font-semibold text-white">Hi, I'm Sanan 👋</h2>
+                            <h2 className="text-2xl font-semibold text-white">Hi, I'm Sanantheshwaran</h2>
                             <p className="text-base leading-7 text-slate-300">
                                 Aspiring Full Stack Web Developer dedicated to building clean, responsive, and user-friendly web applications.
                             </p>
