@@ -30,7 +30,7 @@ export default function Achievements() {
                     <div>
                         <p className="text-sm uppercase tracking-[0.35em] text-cyan-200">LeetCode Profile</p>
                         <p className="mt-2 text-lg font-semibold text-white">{username}</p>
-                        <p className="text-sm text-slate-300">Real-time LeetCode stats from your profile.</p>
+                        <p className="text-sm text-slate-300">My LeetCode profile.</p>
                     </div>
                     <a
                         href={profileUrl}
