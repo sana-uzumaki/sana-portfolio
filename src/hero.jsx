@@ -10,7 +10,7 @@ export default function Hero() {
     const activeDays = typeof data?.totalActiveDays === 'number' ? formatNumber(data.totalActiveDays) : null
 
     return (
-        <section id="hero" className="scroll-mt-10 relative mx-auto max-w-6xl px-6 py-10 sm:px-8 lg:px-12 justify-center items-centeralign">
+        <section id="hero" className="scroll-mt-10 relative mx-auto max-w-6xl px-6 py-10 sm:px-8 lg:px-12 flex justify-center items-centeralign">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur-xl sm:p-8">
                 <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
                     <div className="space-y-4">
