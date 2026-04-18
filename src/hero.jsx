@@ -1,5 +1,6 @@
 import { useLeetCodeStats } from './hooks/useLeetCodeStats.js'
 import { formatNumber } from './lib/leetcode-client.js'
+import './App.css'
 
 export default function Hero() {
     const defaultUsername = 'sana_0630'
