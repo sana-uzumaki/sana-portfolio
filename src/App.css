@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+#hero {
+  height: calc(100vh - 64px);
+}
 /* Custom Animations */
 @keyframes fadeInUp {
   from {
