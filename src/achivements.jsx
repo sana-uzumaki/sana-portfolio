@@ -81,7 +81,7 @@ export default function Achievements() {
 
             <div
                 id="leetcode"
-                className="mb-8 rounded-4xl border border-cyan-300/20 bg-slate-950/70 p-6 shadow-xl shadow-slate-950/30 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-up"
+                className="mb-8 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-up"
             >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                     <div>
@@ -100,12 +100,12 @@ export default function Achievements() {
                 </div>
             </div>
 
-            <div className="rounded-4xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur-xl animate-fade-in-up sm:p-8">
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-8">
+            <div className="space-y-6 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-up animate-stagger-2 sm:p-7">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                     {highlights.map((item, index) => (
                         <div
                             key={item.label}
-                            className={`rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-up ${staggerClasses[index % staggerClasses.length]}`}
+                            className={`rounded-4xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-up ${staggerClasses[index % staggerClasses.length]}`}
                         >
                             <p className="text-4xl font-bold text-cyan-200">{item.value}</p>
                             <p className="mt-2 text-sm uppercase tracking-[0.2em] text-slate-400">{item.label}</p>
@@ -113,72 +113,67 @@ export default function Achievements() {
                     ))}
                 </div>
 
-                <div className="space-y-6">
-                    <div
-                        className="animate-fade-in-up animate-stagger-2"
-                        onMouseEnter={() => setIsCarouselPaused(true)}
-                        onMouseLeave={() => setIsCarouselPaused(false)}
-                        onFocusCapture={() => setIsCarouselPaused(true)}
-                        onBlurCapture={handleCarouselBlur}
-                    >
-                        <div className="flex items-center justify-between gap-4 mb-3">
-                            <p className="text-xs uppercase tracking-[0.35em] text-slate-400">
-                                {activeSlideIndex + 1} / {slides.length}
-                            </p>
-                        </div>
+                <div
+                    onMouseEnter={() => setIsCarouselPaused(true)}
+                    onMouseLeave={() => setIsCarouselPaused(false)}
+                    onFocusCapture={() => setIsCarouselPaused(true)}
+                    onBlurCapture={handleCarouselBlur}
+                >
+                    <div className="flex items-center justify-end gap-4 h-full">
+                        <p className=" text-xs uppercase tracking-[0.35em] text-slate-400">
+                            {activeSlideIndex + 1} / {slides.length}
+                        </p>
+                    </div>
 
-                        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:border-cyan-300/30 hover:bg-slate-900/70">
-                            <div
-                                className="flex transition-transform duration-700 ease-out"
-                                style={{ transform: `translateX(-${activeSlideIndex * 100}%)` }}
-                                aria-live="polite"
-                            >
-                                {slides.map((slide) => (
-                                    <div key={slide.title} className="w-full shrink-0 p-6 sm:p-7">
-                                        <h4 className="text-lg font-semibold text-white">{slide.title}</h4>
-                                        <p className="mt-3 text-slate-300 leading-7">{slide.description}</p>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-linear-to-r from-slate-950/70 to-transparent" />
-                            <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-linear-to-l from-slate-950/70 to-transparent" />
-
-                            <button
-                                type="button"
-                                onClick={goToPreviousSlide}
-                                className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-white/10 bg-slate-950/60 px-3 py-2 text-sm font-semibold text-slate-100 shadow-lg shadow-slate-950/30 transition duration-500 ease-out hover:border-cyan-300/30 hover:bg-slate-950/80 focus:outline-none focus:ring-2 focus:ring-cyan-300/40"
-                                aria-label="Previous slide"
-                            >
-                                ‹
-                            </button>
-                            <button
-                                type="button"
-                                onClick={goToNextSlide}
-                                className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-white/10 bg-slate-950/60 px-3 py-2 text-sm font-semibold text-slate-100 shadow-lg shadow-slate-950/30 transition duration-500 ease-out hover:border-cyan-300/30 hover:bg-slate-950/80 focus:outline-none focus:ring-2 focus:ring-cyan-300/40"
-                                aria-label="Next slide"
-                            >
-                                ›
-                            </button>
-                        </div>
-
-                        <div className="flex justify-center">
-                            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
-                                <div className="flex items-center gap-2">
-                                    {slides.map((slide, index) => (
-                                        <button
-                                            key={slide.title}
-                                            type="button"
-                                            onClick={() => goToSlide(index)}
-                                            className={`h-2.5 w-2.5 rounded-full transition ${
-                                                index === activeSlideIndex ? 'bg-cyan-200' : 'bg-white/20 hover:bg-white/30'
-                                            }`}
-                                            aria-label={`Go to slide ${index + 1}`}
-                                            aria-current={index === activeSlideIndex ? 'true' : 'false'}
-                                        />
-                                    ))}
+                    <div className="relative mt-5 overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:border-cyan-300/30 hover:bg-slate-900/70">
+                        <div
+                            className="flex transition-transform duration-700 ease-out"
+                            style={{ transform: `translateX(-${activeSlideIndex * 100}%)` }}
+                            aria-live="polite"
+                        >
+                            {slides.map((slide) => (
+                                <div key={slide.title} className="w-full shrink-0 p-6 sm:p-7">
+                                    <h4 className="text-lg font-semibold text-white">{slide.title}</h4>
+                                    <p className="mt-3 text-slate-300 leading-7">{slide.description}</p>
                                 </div>
-                            </div>
+                            ))}
+                        </div>
+
+                        <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-linear-to-r from-slate-900/30 to-transparent" />
+                        <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-linear-to-l from-slate-900/30 to-transparent" />
+
+                        <button
+                            type="button"
+                            onClick={goToPreviousSlide}
+                            className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm font-semibold text-slate-100 shadow-lg shadow-slate-950/30 backdrop-blur-xl transition duration-500 ease-out hover:border-cyan-300/30 hover:bg-slate-900/70 focus:outline-none focus:ring-2 focus:ring-cyan-300/40"
+                            aria-label="Previous slide"
+                        >
+                            ‹
+                        </button>
+                        <button
+                            type="button"
+                            onClick={goToNextSlide}
+                            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm font-semibold text-slate-100 shadow-lg shadow-slate-950/30 backdrop-blur-xl transition duration-500 ease-out hover:border-cyan-300/30 hover:bg-slate-900/70 focus:outline-none focus:ring-2 focus:ring-cyan-300/40"
+                            aria-label="Next slide"
+                        >
+                            ›
+                        </button>
+                    </div>
+
+                    <div className="mt-5 flex justify-center">
+                        <div className="flex items-center gap-2">
+                            {slides.map((slide, index) => (
+                                <button
+                                    key={slide.title}
+                                    type="button"
+                                    onClick={() => goToSlide(index)}
+                                    className={`h-2.5 w-2.5 rounded-full transition ${
+                                        index === activeSlideIndex ? 'bg-cyan-200' : 'bg-white/20 hover:bg-white/30'
+                                    }`}
+                                    aria-label={`Go to slide ${index + 1}`}
+                                    aria-current={index === activeSlideIndex ? 'true' : 'false'}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>
