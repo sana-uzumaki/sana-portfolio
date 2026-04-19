@@ -1,14 +1,12 @@
-# Task: Remove commands from the code (identified as comment blocks like {/* ######### */})
+# Achievements Slider Update - Complete
 
-## Steps to complete:
-1. [x] Understand files: Read main.jsx and portfolio.jsx - identified {/* ######### */} as target in portfolio.jsx.
-2. [x] Create and confirm edit plan with user.
-3. [ ] Edit portfolio.jsx to remove all command comment blocks.
-4. [ ] Verify changes with read_file.
-5. [ ] Update TODO.md with completion.
-6. [ ] Attempt task completion.
+Previous full-screen task complete.
 
-## Notes:
-- User confirmed to "remove all the commands" - treating comment blocks as commands.
-- No other commands found (no console.log etc.).
+**Changes:**
+- Added "🎯 Problem-Solving Expertise" slide #0 (dynamic solved count).
+- Shifted original slides to #1-3.
+- Removed static para (now in slider).
+- Updated useMemo deps [streak, solved].
+- Highlights grid intact.
 
+Test: Run `npm run dev`, check achievements section carousel (now 4 slides, first is Problem-Solving, UI matches others).
