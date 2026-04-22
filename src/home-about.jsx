@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <div className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12 space-y-6">
+        <div className="relative mx-auto max-w-6xl px-6 py-12 sm:px-8 lg:px-12 sm:mt-12 space-y-6">
             <div className="grid gap-6 lg:grid-cols-2">
                 <section id="home" className="scroll-mt-14">
                     <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-left sm:p-8">
