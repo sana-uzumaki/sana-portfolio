@@ -81,7 +81,7 @@ export default function Achievements() {
 
             <div
                 id="leetcode"
-                className="mb-8 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-up"
+                className="mb-8 rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-up"
             >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                     <div>
@@ -100,7 +100,7 @@ export default function Achievements() {
                 </div>
             </div>
 
-            <div className="space-y-6 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-up animate-stagger-2 sm:p-7">
+            <div className="space-y-6 rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl shadow-slate-950/40 backdrop-blur-xl transition duration-700 ease-out hover:-translate-y-2 hover:border-cyan-300/30 hover:bg-slate-900/70 animate-fade-in-up animate-stagger-2 sm:p-7">
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                     {highlights.map((item, index) => (
                         <div
